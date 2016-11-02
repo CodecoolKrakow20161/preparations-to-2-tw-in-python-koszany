@@ -9,12 +9,12 @@ class AddTwoNumbersTest(unittest.TestCase):
         self.assertEqual(app.validatePassword("abcd"),
                          "Password has to have 5 characters at least!")
 
-    def test_password_has_no_digit(self):
-        self.assertEqual(app.validatePassword("thisispassword"),
-                         "Password has to contain one digit at least!")
+    def test_password_has_spaces(self):
+        self.assertEqual(app.validatePassword("Password 1"),
+                         "Password cannot contain spaces!")
 
     def test_password_is_valid(self):
-        self.assertTrue(app.validatePassword("Password1"))
+        self.assertTrue(app.validatePassword("Password"))
 
 if __name__ == '__main__':
     unittest.main()
