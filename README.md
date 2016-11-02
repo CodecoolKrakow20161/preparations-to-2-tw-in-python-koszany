@@ -1,2 +1,1 @@
-# Preparations-for-the-2-teamwork-week-in-python
-Preparations for the 2 teamwork week in python
+# Preparations to 2 TW in Python

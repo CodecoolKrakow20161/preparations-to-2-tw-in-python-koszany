@@ -1,0 +1,2 @@
+def validatePassword(value):
+    pass
