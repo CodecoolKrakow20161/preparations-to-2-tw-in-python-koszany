@@ -5,6 +5,10 @@ import main as app
 class AddTwoNumbersTest(unittest.TestCase):
     "Basic Tests"
 
+    def test_password_is_empty(self):
+        self.assertEqual(app.validatePassword(""),
+                         "Password cannot be empty!")
+
     def test_password_has_less_then_5_chars(self):
         self.assertEqual(app.validatePassword("abcd"),
                          "Password has to have 5 characters at least!")
